@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =================================================
+	Base
+================================================= */
+/* h
+------------------------------------------------- */
+.postbox h3 {
+	border-bottom: 1px solid #EEE;
+}
+
+/* table
+------------------------------------------------- */
+.inside table,
+.inside th,
+.inside td {
+	border-collapse: collapse;
+	border-top: 1px solid #F0F0F0;
+	border-bottom: 1px solid #F0F0F0;
+}
+.inside table {
+	width: 100%;
+}
+.inside th {
+	background: #F9F9F9;
+	border-right: 1px solid #E1E1E1;
+	text-align: left;
+}
+.inside th,
+.inside td {
+	padding: 13px 15px;
+}
+
+/* description
+------------------------------------------------- */
+.description {
+	font-size: 12px;
+	color: #899194;
+}
+
+/* notes
+------------------------------------------------- */
+.notes {
+	font-size: 12px;
+	color: #F00;
+}
+
+/* submit
+------------------------------------------------- */
+#submit-box #update-order,
+#operation-box #change-edit-mode {
+	width: 100%;
+}
+
+/* text
+------------------------------------------------- */
+.text.price {
+	max-width: 100px;
+}
+.text.quantity {
+	max-width: 60px;
+}
+#status-box select {
+	width: 100%;
+}
+
+/* clearfix
+------------------------------------------------- */
+.cf {
+	zoom: 1;
+}
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+.clear,
+.cf:after {
+	clear: both;
+}
+
+
+/* =================================================
+	Order
+================================================= */
+#order-information .inside,
+#order-cart .inside {
+	margin: 0;
+	padding: 0;
+}
+#order-information h4 {
+	margin: 30px 0 10px;
+	padding: 0 15px;
+}
+#order-information th {
+	width: 30%;
+}
+#order-information #info-head-box th,
+#order-information #info-head-box td {
+	width: 16.5%;
+	border-top: none;
+}
+#info-head-box th {
+	border-left: 1px solid #E1E1E1;
+}
+.secondary-box,
+.tertiary-box,
+.quaternary-box {
+	width: 32.28%;
+}
+.secondary-box,
+.tertiary-box {
+	float: left;
+}
+.secondary-box {
+	margin-right: 1.3%;
+}
+.quaternary-box {
+	float: right;
+}
+.customer-mail .text.long {
+	width: 60%;
+	margin-right: 10px;
+}
+#order-cart .inside td {
+	border-right: 1px solid #E1E1E1;
+}
+#order-cart .num,
+#order-cart th.quantity,
+#order-cart td.quantity {
+	width: 20px;
+}
+#order-cart .thumbnail {
+	width: 60px;
+}
+#order-cart .stock {
+	width: 70px;
+}
+#order-cart .action {
+	width: 75px;
+}
+#order-cart th.price,
+#order-cart td.price,
+#order-cart .subtotal {
+	width: 80px;
+}
+#order-cart th.price,
+#order-cart td.price,
+#order-cart th.quantity,
+#order-cart td.quantity,
+#order-cart .subtotal,
+#order-cart .stock,
+#order-cart .action {
+	text-align: center;
+}
+#order-cart td.subtotal,
+#order-cart .item-total th,
+#order-cart .discount td,
+#order-cart .tax td,
+#order-cart .shipping-charge td,
+#order-cart .cod-fee td,
+#order-cart .total-price th {
+	text-align: right;
+}
+#order-cart .item-total .notes,
+#order-cart .discount .notes,
+#order-cart .tax .notes,
+#order-cart .shipping-charge .notes,
+#order-cart .cod-fee .notes,
+#order-cart .total-price .notes {
+	text-align: left;
+}
+#order-cart .discount .notes,
+#order-cart .tax .notes,
+#order-cart .shipping-charge .notes,
+#order-cart .cod-fee .notes {
+	font-size: .9em;
+}
+#order-cart .total-price #total {
+	font-size: 2em;
+}
+#mail-print-box .title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#mail-print-box .title:before {
+	margin-right: 10px;
+	font-size: 1.6em;
+}
+#mail-print-box .status-yes:before {
+	margin-right: 5px;
+	color: #C00;
+	font-size: 1.5em;
+}
+#mail-print-box .status-no {
+	padding-left: 25px;
+}
+.dialogsearch label {
+	display: inline-block;
+	width: 7em;
+}
+#additem-form {
+	margin-top: 20px;
+}
+#additem-form table,
+#statusHistoryDialog table,
+#statusHistoryDialog table th,
+#statusHistoryDialog table td {
+	border: 1px solid #dfdfdf;
+}
+#additem-form table th,
+#additem-form table td {
+	border-bottom: 1px solid #dfdfdf;
+}
+#additem-form table th,
+#additem-form table td,
+#statusHistoryDialog table th,
+#statusHistoryDialog table td {
+	padding: 8px;
+}
+#additem-form table th,
+#statusHistoryDialog table th {
+	background: #F9F9F9;
+}
+#statusHistoryDialog table th {
+	width: 10em;
+	text-align: left;
+}
+
+@media only screen and (max-width: 1600px) {
+	.secondary-box {
+		overflow: hidden;
+		float: none;
+		width: 100%;
+	}
+	#status-box {
+		float: left;
+	}
+	#delivery-method-box {
+		float: right;
+	}
+	.tertiary-box,
+	.quaternary-box,
+	#status-box,
+	#delivery-method-box {
+		width: 49%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#status-box,
+	#customer-box,
+	#delivery-method-box,
+	#delivery-box {
+		float: none;
+		width: 100%;
+	}
+	#order-cart thead th {
+		display: none;
+	}
+}
+
+#dialog-parent {
+	position: fixed;
+}
+
+#sendMailDialog #sendmail-message {
+	width: 100%;
+	height: 400px;
+}
+
+#sendMailDialog input.text {
+	vertical-align: middle;
+}
+#sendMailDialog label {
+	display: inline-block;
+	width: 20%;
+	cursor: auto;
+}
+
+#sendMailDialog input.text {
+	width: 300px;
+}
+
+/* =================================================
+	Order List
+================================================= */
+.order_tags td.total_price {
+	text-align: right;
+}

@@ -1,0 +1,558 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+ * 1.0 Basic
+ * -----------------------------------------------------------------------------
+ */
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#wpfooter{
+	position: static !important;
+}
+
+/* = clearfix
+-------------------------------------------------------------- */
+.clearfix:after {
+	display: block; 
+	content: " ";  
+	visibility: hidden; 
+	clear: both; 
+	height: 0.1px; 
+	font-size: 0.1em; 
+	line-height: 0; 
+}
+.clearfix {
+	display: inline-table;
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;
+}
+.clearfix {
+	display: block;
+}
+.clear {
+	clear: both;
+}
+
+/* required
+------------------------------------------------- */
+.required {
+	display: inline;
+	margin-right: 3px;
+	color: #F00;
+}
+
+/* = table
+-------------------------------------------------------------- */
+.wc2_admin table {
+	width: 100%;
+}
+.wc2_admin table,
+.wc2_admin table th,
+.wc2_admin table td {
+	border-collapse: collapse;
+}
+#item_base th,
+#item_meta th {
+	width: 15%;
+	text-align: left;
+}
+.phrase-area th {
+	width: 5em;
+}
+#item_base th,
+#item_base td,
+#item_meta th,
+#item_meta td,
+#item_sku th,
+#item_sku td {
+	padding: 5px 10px;
+}
+
+
+/* form
+------------------------------------------------- */
+input.long {
+	width: 95%;
+}
+input.short {
+	width: 45%;
+}
+.medium-text {
+	width: 12em;
+}
+textarea.regular-text {
+	width: 25em;
+}
+input.right {
+	text-align: right;
+}
+input.left {
+	text-align: left;
+}
+input.center {
+	text-align: center;
+}
+input[type="button"] {
+	cursor: pointer;
+}
+td.horizontal label {
+	margin-right: 10px;
+}
+td.vertical label {
+	display: block;
+	margin: .25em 0 .5em;
+}
+textarea.mail-header,
+textarea.mail-footer {
+	height: 10em;
+}
+#payment-method textarea,
+#custom_member_field textarea,
+#custom_customer_field textarea,
+#custom_delivery_field textarea,
+#custom_order_field textarea {
+	width: 99%;
+}
+.update-all-options {
+	margin-top: 10px;
+}
+fieldset.dl-check-option {
+	line-height: 2em;
+	margin-top: 10px;
+	padding: 0 10px 10px;
+	border: 1px solid #DFDFDF;
+}
+fieldset.dl-check-option legend {
+	margin-left: 10px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+fieldset.dl-check-option label {
+	white-space: nowrap;
+	margin-right: 10px;
+}
+
+
+/**
+ * 2.0 Common
+ * -----------------------------------------------------------------------------
+ */
+
+/* メッセージ出力
+-------------------------------------------------------------- */
+.wc2_admin .none {
+	border: 1px solid #fff;
+	background-color: #fff;
+	height: 1px;
+	visibility: hidden;
+}
+
+/* error */
+.wc2_admin div.error_message {
+	color: #F00;
+	font-weight:bold;
+	padding: 0 10px;
+}
+
+.wc2_admin .error #anibox .mes {
+	line-height: 20px;
+	float: left;
+	text-align: left;
+	text-indent: 1em;
+	margin: 0;
+	padding: 3px 0;
+	font-size: 14px;
+}
+.wc2_admin .error {
+	border: 1px solid #FF6A6A;
+	background-color: #ff0;
+	color: #FF0000;
+	display: block;
+	margin-bottom: 10px;
+	padding: 0px;
+	margin-left: 10px;
+}
+
+/* success */
+.wc2_admin .success #anibox{
+	border: 1px solid #99CCCC;
+	background-color: #ECFFFF;
+	color: #339900;
+	display: block;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+.wc2_admin .success #anibox .mes{
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	text-indent: 1em;
+	margin: 0;
+	padding: 3px 0;
+	float: left;
+}
+
+/* 画像 */
+.wc2_admin .success img, 
+.wc2_admin .caution img, 
+.wc2_admin .error img {
+	height: 24px;
+	width: 24px;
+	float: left;
+	margin: 1px 0 0 6px;
+	padding: 0;
+}
+
+.wc2_admin .none img{
+	display: none;
+	visibility: hidden;
+	width: 1px;
+}
+
+/* タブの初期ロード時非表示
+------------------------------------------------------------- */
+.wc2tabs {
+	display:none;
+}
+.js .wc2tabs .postbox .hndle {
+	cursor: inherit;
+}
+
+/* = ui-sortable
+-------------------------------------------------------------- */
+.ui-sortable li a {
+	cursor: pointer;
+}
+th.ui-sortable-handle {
+	cursor: move;
+}
+th.ui-sortable-handle {
+	background: #fff;
+	border: #DFDFDF 1px solid;
+}
+#payment-table,
+#payment-table-add,
+#postoptcustomstuff table {
+	margin: 0;
+	border: 1px solid #DFDFDF;
+	background-color: #F9F9F9;
+}
+#payment-table-add {
+	margin-bottom: 10px;
+}
+#payment-table th,
+#payment-table-add th,
+#payment-table td,
+#payment-table-add td,
+#postoptcustomstuff th,
+#postoptcustomstuff td {
+	border-bottom: 1px solid #DFDFDF;
+}
+#payment-table thead th,
+#payment-table-add thead th,
+#postoptcustomstuff thead th {
+	padding: 5px 8px 8px;
+	background-color: #F1F1F1;
+}
+#payment-table td,
+#payment-table-add td,
+#postoptcustomstuff td {
+	padding: 8px;
+	vertical-align: top;
+}
+#payment-table .submit,
+#postoptcustomstuff .submit {
+	padding: 0 8px 8px;
+}
+
+/**
+ * 3.0 Item
+ * -----------------------------------------------------------------------------
+ */
+.post-type-item .widefat thead th.column-thumbnail {
+	width: 6%;
+	min-width: 60px;
+}
+.post-type-item .widefat thead th.column-category {
+	width: 15%;
+}
+.post-type-item .widefat thead th.column-skucode,
+.post-type-item .widefat thead th.column-skuprice,
+.post-type-item .widefat thead th.column-stock,
+.post-type-item .widefat thead th.column-stock_status,
+.post-type-item .widefat thead th.column-date {
+	width: 10%;
+}
+.post-type-item .widefat thead th.column-skuprice {
+	width: 7%;
+}
+.post-type-item .widefat thead th.column-stock {
+	width: 6%;
+}
+.post-type-item .widefat tbody td.column-skuprice,
+.post-type-item .widefat tbody td.column-stock {
+	text-align: right;
+}
+.post-type-item #post-body-content {
+	margin-bottom: 0;
+}
+#item-genre-all {
+	max-height: 600px;
+}
+#item_sku_update li,
+#item_sku_0 {
+    margin: 0;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    border-spacing: 0;
+    background-color: #f9f9f9;
+}
+#item_sku_0 {
+	margin-top: 10px;
+}
+#item_sku thead th {
+	width: 20%;
+	padding: 5px 8px 8px;
+	background-color: #F1F1F1;
+	text-align: center;
+}
+#item_sku_update li div,
+#item_sku_0 div {
+	padding:  0 10px 10px;
+}
+
+.item-main-pict .subpict{
+	float:left;
+}
+
+/**
+ * 4.0 Setting
+ * -----------------------------------------------------------------------------
+ */
+
+/* = general-setting
+-------------------------------------------------------------- */
+.postbox .inside.business-calendar {
+	overflow: hidden;
+	padding: 0;
+}
+.business_days_exp_box {
+	display: inline-block;
+	margin-right: .5em;
+	width: 2em;
+	height: 1.2em;
+}
+.business-calendar > div {
+	float: left;
+	margin: 12px;
+	width: 210px;
+	height: 300px;
+}
+.business-calendar table,
+.business-calendar table th,
+.business-calendar table td {
+	border: 1px solid #E5E5E5;
+}
+.business-calendar table caption {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.business-calendar table th,
+.business-calendar table td {
+	width: 14.2857%;
+	text-align: center;
+}
+.business-calendar table th {
+	background: #F9F9F9;
+}
+.business-calendar table div {
+	padding: 5px 0;
+	cursor: pointer;
+}
+.business-calendar table div:hover {
+	padding: 3px 0;
+	border: #000 2px solid;
+}
+.cartname-rules-label {
+	display: inline-block;
+	width: 8em;
+}
+
+/* = delivery-setting
+-------------------------------------------------------------- */
+#delivery-tabs .column-2 {
+	position: relative;
+}
+#delivery-tabs .add-new,
+#delivery-tabs .add-new:active {
+	padding: 5px 20px;
+	text-decoration: none;
+	border: none;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #E0E0E0;
+	text-shadow: none;
+	color: #0074A2;
+	font-weight: 600;
+	font-size: 13px;
+}
+#delivery-tabs .add-new:hover {
+	color: #333;
+	background-color: #E5E5E5;
+}
+#delivery-tabs .column-2 .delivery-container-1 {
+	position: absolute;
+	top: 0;
+	width: 360px;
+}
+#delivery-tabs .column-2 .delivery-container-1 input[type="text"],
+#delivery-tabs .column-2 .delivery-container-1 select {
+	width: 100%;
+}
+#delivery-tabs .column-2 .delivery-container-2 {
+	margin-left: 380px;
+	padding-top: 45px;
+}
+#delivery-tabs .column-2 th {
+	width: 8em;
+}
+#delivery-tabs .shipping_charge_label,
+#delivery-tabs .delivery_days_label {
+	display: inline-block;
+	width: 6em;
+}
+
+/* = payment-setting
+-------------------------------------------------------------- */
+#cod_fix_table,
+#cod_change_table,
+#cod_change_table table {
+	margin-top: 10px;
+}
+#cod_fix_table,
+#cod_fix_table th,
+#cod_fix_table td,
+#cod_change_table table,
+#cod_change_table table th {
+	width: 50%;
+}
+#cod_fix_table,
+#cod_change_table table,
+#cod_fix_table th,
+#cod_change_table table th,
+#cod_fix_table td,
+#cod_change_table table td {
+	border-collapse: collapse;
+}
+#cod_fix_table,
+#cod_change_table table {
+	min-width: 500px;
+	border: 1px solid #DFDFDF;
+}
+#cod_fix_table th,
+#cod_change_table table th,
+#cod_fix_table td,
+#cod_change_table table td {
+	border-bottom: 1px solid #DFDFDF;
+	padding: 8px;
+	vertical-align: middle;
+}
+#cod_fix_table th,
+#cod_change_table table th {
+	background: #F9F9F9;
+}
+#cod_fix_table td,
+#cod_change_table table td {
+	border-bottom: 1px solid #DFDFDF;
+}
+#payment-method .ui-sortable-handle {
+	width: 1em;
+}
+#payment-method .payment-name,
+#payment-method .payment-settlement,
+#payment-method .payment-charge {
+	width: 12em;
+}
+.message,
+.error_message {
+	margin-bottom: 5px;
+}
+.settle-inside {
+	border-bottom: 1px solid #E5E5E5;
+}
+div.explanation  {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	display: none;
+	margin-top: 10px;
+	color: #DA6801;
+	letter-spacing: 1px;
+}
+
+
+/* = custom-setting
+-------------------------------------------------------------- */
+#custom_member_field,
+#custom_customer_field,
+#custom_delivery_field,
+#custom_order_field {
+}
+#custom_member_field .item-opt-key,
+#custom_customer_field .item-opt-key,
+#custom_delivery_field .item-opt-key,
+#custom_order_field .item-opt-key {
+	width: 36em;
+}
+
+
+
+/**
+ * 5.0 Order
+ * -----------------------------------------------------------------------------
+ */
+.widefat thead th.column-dec_order_id,
+.widefat thead th.column-order_date,
+.widefat thead th.dec_kaitori_id  {
+	width: 10%;
+	min-width: 7em;
+}
+.widefat thead th.column-member_id,
+.widefat.members thead th.column-ID {
+	width: 6%;
+	min-width: 60px;
+}
+
+
+/* Import
+-------------------------------------------------------------*/
+.ui-progressbar-value {
+    height: 100%;
+	background: rgb(208,228,247); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(208,228,247,1) 0%, rgba(115,177,231,1) 24%, rgba(10,119,213,1) 50%, rgba(83,159,225,1) 79%, rgba(135,188,234,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(208,228,247,1)), color-stop(24%,rgba(115,177,231,1)), color-stop(50%,rgba(10,119,213,1)), color-stop(79%,rgba(83,159,225,1)), color-stop(100%,rgba(135,188,234,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+	Current gradient has opacity, switching color format to 'rg
+}
+
+#progress {
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #8BADFF;
+	background-color: #FFFFFF;
+    height: 20px;
+
+}

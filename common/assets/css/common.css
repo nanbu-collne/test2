@@ -1,0 +1,39 @@
+/* This stylesheet is used to common style. */
+
+.disp_var{
+	clear: both;
+	border: #2B8B45 solid;
+	border-width: 1px;
+	margin: 50px 10px 10px 10px;
+	padding: 10px;
+	font-size: 13px;
+	position: inherit;
+	width: 95%;
+}
+
+#dialog-parent{
+    position: absolute;
+    top: 0;  
+    left: 0;  
+}
+
+#PDFDialog fieldset {
+    border: 0px none;
+    padding: 0px;
+    margin: 0px;
+}
+/*
+
+.disp_var{
+	border:#2B8B45 solid;
+	border-width:1px;
+	margin:0 10px 10px 10px;
+	padding:10px;
+	font-size:13px;
+}
+
+*/
+
+.sc_quantity{
+	width:10%;
+}

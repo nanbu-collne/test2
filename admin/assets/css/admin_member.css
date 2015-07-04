@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =================================================
+	Base
+================================================= */
+/* h
+------------------------------------------------- */
+.postbox h3 {
+	border-bottom: 1px solid #EEE;
+}
+
+/* table
+------------------------------------------------- */
+.member_post table,
+.member_post th,
+.member_post td {
+	border-collapse: collapse;
+	border-top: 1px solid #F0F0F0;
+	border-bottom: 1px solid #F0F0F0;
+}
+.member_post table {
+	width: 100%;
+}
+.member_post th {
+	background: #F9F9F9;
+	border-right: 1px solid #E1E1E1;
+	text-align: left;
+}
+.member_post th,
+.member_post td {
+	padding: 13px 15px;
+}
+
+/* =================================================
+	List
+================================================= */
+.wc2_admin .member_list tr.point_zero {
+	background-color: rgb(255, 255, 211);
+}
+
+/* =================================================
+	Info Head
+================================================= */
+#poststuff .info_head .inside {
+	margin: 0;
+	padding: 0;
+}
+.wc2_member_info {
+	float: left;
+	width: 33.33%;
+}
+.wc2_member_info th {
+	width: 40%;
+}
+
+/* =================================================
+	History
+.history-area table{
+}
+.history-area th{
+	background-color:#777575;
+	width: auto;
+	color:#FFFFFF;
+}
+.retail {
+    margin-bottom: 20px;
+}
+.retail table {
+	border:none;
+}
+.retail th{
+	background-color:#DEDEDE;
+	color:#222;
+}
+================================================= */
+.history-area table,
+.history-area th,
+.history-area td {
+	border: 1px solid #E1E1E1;
+}
+.history-area th,
+.history-area td {
+	padding: 10px;
+	text-align: center;
+}
+.history-area th {
+	background: #CCC;
+}
+.history-area table table th {
+	background: #F9F9F9;
+}
+.history-area .num,
+.history-area .quantity {
+	width: 5em;
+}
+.history-area .thumbnail {
+	width: 80px;
+}
+.history-area .price,
+.history-area .subtotal {
+	width: 8em;
+}
+.history-area .aleft {
+	text-align: left;
+}
+.history-area .rightnum {
+	text-align: right;
+}
+
+
+/* =================================================
+	Media
+================================================= */
+
+@media only screen and (max-width: 1600px) {
+	.wc2_member_info {
+		width: 50%;
+	}
+	.wc2_member_info_tertiary {
+		clear: both;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.wc2_admin th {
+		width: 35%;
+	}
+	.wc2_member_info  {
+		float: none;
+		width: 100%;
+	}
+}
+
+
