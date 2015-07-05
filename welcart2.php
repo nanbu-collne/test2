@@ -17,7 +17,7 @@
  * Plugin Name:       Welcart2
  * Plugin URI:        @TODO
  * Description:       @TODO
- * Version:           1.0.1507051
+ * Version:           1.0.1507055
  * Author:            Collne Inc.
  * Author URI:        http://www.collne.com/
  * Text Domain:       plugin-name-locale
