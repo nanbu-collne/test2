@@ -1,0 +1,25 @@
+From 075dbe618739c40f3dc4e5d1b8dd7c95435ec224 Mon Sep 17 00:00:00 2001
+From: nanbu <nanbu@collne.com>
+Date: Sun, 5 Jul 2015 17:32:03 +0900
+Subject: [PATCH] aa
+
+---
+ welcart2.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/welcart2.php b/welcart2.php
+index 808232a..05dca8a 100644
+--- a/welcart2.php
++++ b/welcart2.php
+@@ -17,7 +17,7 @@
+  * Plugin Name:       Welcart2
+  * Plugin URI:        @TODO
+  * Description:       @TODO
+- * Version:           1.0.1507052
++ * Version:           1.0.1507053
+  * Author:            Collne Inc.
+  * Author URI:        http://www.collne.com/
+  * Text Domain:       plugin-name-locale
+-- 
+1.9.5.msysgit.1
+
